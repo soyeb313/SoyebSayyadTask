@@ -16,6 +16,13 @@
 		0423BD3525D10925004100D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0423BD3325D10925004100D4 /* LaunchScreen.storyboard */; };
 		0423BD4025D10925004100D4 /* SoyebSayyadTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD3F25D10925004100D4 /* SoyebSayyadTaskTests.swift */; };
 		0423BD4B25D10925004100D4 /* SoyebSayyadTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD4A25D10925004100D4 /* SoyebSayyadTaskUITests.swift */; };
+		0423BD5B25D10C77004100D4 /* Global Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD5925D10C77004100D4 /* Global Functions.swift */; };
+		0423BD5C25D10C77004100D4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD5A25D10C77004100D4 /* NetworkService.swift */; };
+		0423BD5F25D10CBE004100D4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD5E25D10CBE004100D4 /* Weather.swift */; };
+		0423BD6225D11226004100D4 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD6125D11226004100D4 /* WeatherDetailsViewController.swift */; };
+		0423BD6525D114B9004100D4 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD6425D114B9004100D4 /* WeatherTableViewCell.swift */; };
+		0423BD6925D11A0B004100D4 /* WeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD6825D11A0B004100D4 /* WeatherVM.swift */; };
+		0423BD6B25D142E1004100D4 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423BD6A25D142E1004100D4 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		0423BD4625D10925004100D4 /* SoyebSayyadTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoyebSayyadTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0423BD4A25D10925004100D4 /* SoyebSayyadTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoyebSayyadTaskUITests.swift; sourceTree = "<group>"; };
 		0423BD4C25D10925004100D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0423BD5925D10C77004100D4 /* Global Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Global Functions.swift"; sourceTree = "<group>"; };
+		0423BD5A25D10C77004100D4 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0423BD5E25D10CBE004100D4 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		0423BD6125D11226004100D4 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
+		0423BD6425D114B9004100D4 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		0423BD6825D11A0B004100D4 /* WeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVM.swift; sourceTree = "<group>"; };
+		0423BD6A25D142E1004100D4 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +115,12 @@
 		0423BD2425D10922004100D4 /* SoyebSayyadTask */ = {
 			isa = PBXGroup;
 			children = (
-				0423BD2525D10922004100D4 /* AppDelegate.swift */,
-				0423BD2725D10922004100D4 /* SceneDelegate.swift */,
-				0423BD2925D10922004100D4 /* ViewController.swift */,
-				0423BD2B25D10922004100D4 /* Main.storyboard */,
-				0423BD3125D10925004100D4 /* Assets.xcassets */,
-				0423BD3325D10925004100D4 /* LaunchScreen.storyboard */,
-				0423BD3625D10925004100D4 /* Info.plist */,
-				0423BD2E25D10922004100D4 /* SoyebSayyadTask.xcdatamodeld */,
+				0423BD7025D15533004100D4 /* Supported files */,
+				0423BD6C25D15492004100D4 /* AppDelegate */,
+				0423BD6325D11496004100D4 /* View */,
+				0423BD6025D11206004100D4 /* Controller */,
+				0423BD5D25D10CB1004100D4 /* Model */,
+				0423BD5825D10C50004100D4 /* Services */,
 			);
 			path = SoyebSayyadTask;
 			sourceTree = "<group>";
@@ -129,6 +141,63 @@
 				0423BD4C25D10925004100D4 /* Info.plist */,
 			);
 			path = SoyebSayyadTaskUITests;
+			sourceTree = "<group>";
+		};
+		0423BD5825D10C50004100D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0423BD5A25D10C77004100D4 /* NetworkService.swift */,
+				0423BD5925D10C77004100D4 /* Global Functions.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0423BD5D25D10CB1004100D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0423BD6A25D142E1004100D4 /* AlertView.swift */,
+				0423BD5E25D10CBE004100D4 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0423BD6025D11206004100D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0423BD6125D11226004100D4 /* WeatherDetailsViewController.swift */,
+				0423BD6825D11A0B004100D4 /* WeatherVM.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0423BD6325D11496004100D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0423BD2B25D10922004100D4 /* Main.storyboard */,
+				0423BD6425D114B9004100D4 /* WeatherTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0423BD6C25D15492004100D4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0423BD2525D10922004100D4 /* AppDelegate.swift */,
+				0423BD2725D10922004100D4 /* SceneDelegate.swift */,
+				0423BD2925D10922004100D4 /* ViewController.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0423BD7025D15533004100D4 /* Supported files */ = {
+			isa = PBXGroup;
+			children = (
+				0423BD3125D10925004100D4 /* Assets.xcassets */,
+				0423BD3325D10925004100D4 /* LaunchScreen.storyboard */,
+				0423BD2E25D10922004100D4 /* SoyebSayyadTask.xcdatamodeld */,
+				0423BD3625D10925004100D4 /* Info.plist */,
+			);
+			path = "Supported files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +331,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0423BD5B25D10C77004100D4 /* Global Functions.swift in Sources */,
 				0423BD3025D10922004100D4 /* SoyebSayyadTask.xcdatamodeld in Sources */,
+				0423BD6225D11226004100D4 /* WeatherDetailsViewController.swift in Sources */,
+				0423BD6B25D142E1004100D4 /* AlertView.swift in Sources */,
 				0423BD2A25D10922004100D4 /* ViewController.swift in Sources */,
 				0423BD2625D10922004100D4 /* AppDelegate.swift in Sources */,
+				0423BD5C25D10C77004100D4 /* NetworkService.swift in Sources */,
+				0423BD6525D114B9004100D4 /* WeatherTableViewCell.swift in Sources */,
 				0423BD2825D10922004100D4 /* SceneDelegate.swift in Sources */,
+				0423BD5F25D10CBE004100D4 /* Weather.swift in Sources */,
+				0423BD6925D11A0B004100D4 /* WeatherVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYZFJW55C9;
-				INFOPLIST_FILE = SoyebSayyadTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SoyebSayyadTask/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +534,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYZFJW55C9;
-				INFOPLIST_FILE = SoyebSayyadTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SoyebSayyadTask/Supported files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
